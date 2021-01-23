@@ -88,7 +88,7 @@ hr {
   border: none;
   display: inline-block;
   min-width: 0;
-  height: 2.5rem;
+  height: 2rem;
   line-height: 1;
 }
 .qty-input .product-qty:focus,
@@ -925,6 +925,9 @@ button:focus {
 }
 .product-view .product-details .quantity span {
   margin-right: 20px;
+}
+.product-view .product-details .quantity .badge {
+  background: #51bb74;
 }
 .product-view .details h3 {
   font-size: 24px;
