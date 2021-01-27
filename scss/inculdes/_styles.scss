@@ -737,6 +737,111 @@ button:focus {
 }
 // End order process
 
+// Start User Profile
+.user-profile {
+  .user-icon {
+    font-size: 60px;
+  }
+  .list-group {
+    border-radius: 10px;
+    a {
+      color: $secondary_color;
+      font-weight: 600;
+      font-size: 14px;
+      &:hover {
+        text-decoration: none;
+        color: $main_color;
+      }
+      i {
+        color: $main_color;
+        font-size: 19px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .list-group-item {
+    border-color: $main_color;
+    &.active {
+      background: transparent;
+      a {
+        color: $main_color;
+      }
+    }
+  }
+}
+.user-wishlist {
+  table {
+    tr {
+      td {
+        &:first-child {
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
+.user-orders {
+  .steps-process {
+    position: relative;
+    li {
+      text-align: center;
+      font-weight: bold;
+      font-size: $font12;
+      span {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        background: $white;
+        display: inline-block;
+        border: 1px solid $secondary_color;
+        font-weight: 500;
+        margin-bottom: 5px;
+        position: relative;
+        z-index: 2;
+      }
+
+      &.finished-step {
+        span {
+          background: $main_color;
+          color: $white;
+          border-color: $main_color;
+        }
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 20px;
+      right: 0;
+      top: 21px;
+      background: $secondary_color;
+      opacity: 0.3;
+      height: 2px;
+      width: 91%;
+      -moz-transform: translate(0, 50%);
+      -o-transform: translate(0, 50%);
+      -webkit-transform: translate(0, 50%);
+      transform: translate(0, 50%);
+    }
+  }
+  .cart-items-list {
+    tr {
+      td {
+        border-bottom: 1px solid #e8e8e8;
+        padding-top: 20px;
+      }
+      &:last-child {
+        td {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+// End User Profile
+
 // Start footer
 .footer {
   margin-top: 50px;
