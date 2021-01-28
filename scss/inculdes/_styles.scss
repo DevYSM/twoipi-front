@@ -842,6 +842,22 @@ button:focus {
 }
 // End User Profile
 
+.categoires {
+  .category-box {
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    img {
+      width: 230px;
+      height: 230px;
+      object-fit: cover;
+    }
+    margin-bottom: 30px;
+  }
+}
+
 // Start footer
 .footer {
   margin-top: 50px;
