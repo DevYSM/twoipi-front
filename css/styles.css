@@ -1323,6 +1323,18 @@ button:focus {
   border-bottom: none;
 }
 
+.categoires .category-box {
+  margin-bottom: 30px;
+}
+.categoires .category-box a:hover {
+  text-decoration: none;
+}
+.categoires .category-box img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+}
+
 .footer {
   margin-top: 50px;
   background: #97e3f0;
